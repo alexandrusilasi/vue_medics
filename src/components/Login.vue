@@ -66,7 +66,7 @@ export default {
       login(){
         axios.post('https://medics.bistrita-webdesign.ro/login.php' , {email: this.email , password: this.password})
         .then((res) => {
-          console.log(res);
+          console.log(res.data);
         });
       }
     }
